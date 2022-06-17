@@ -44,16 +44,21 @@ def main():
                 print(
                     Fore.GREEN + "Downloading platform-tools-windows.zip" + Fore.RESET
                 )
-                file = requests.get(
-                    "https://dl.google.com/android/repository/platform-tools-latest-windows.zip"
-                )
+                try:
+                    file = requests.get(
+                        "https://dl.google.com/android/repository/platform-tools-latest-windows.zip"
+                    )
+                except:
+                    print(Fore.RED + "Looks like you are not connected to the internet." + Fore.RESET)
+                    raise SystemExit(1)
                 open("platform-tools-windows.zip", "wb").write(file.content)
                 with zipfile.ZipFile("./platform-tools-windows.zip", "r") as zip_ref:
                     zip_ref.extractall(".")
                 os.remove("platform-tools-windows.zip")
                 app_path = os.path.join("./", "platform-tools")
                 os.environ["PATH"] += os.pathsep + app_path
+                print(Fore.GREEN + 'Done!' + Fore.RESET)
     else:
         app_path = os.path.join("./", "platform-tools")
         os.environ["PATH"] += os.pathsep + app_path
-    print(subprocess.run(['adb','devices','-l'], capture_output=True).stdout.splitlines()[1])
+        fr = False

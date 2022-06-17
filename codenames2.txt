@@ -1,0 +1,585 @@
+ASUS
+ 
+ obiwan
+ROG Phone 3
+obiwan
+ Z01R
+Zenfone 5Z (ZS620KL)
+Z01R
+ sake
+ZenFone 8
+sake
+ X00P
+Zenfone Max M1
+X00P
+ X01AD
+Zenfone Max M2
+X01AD
+ X00TD
+Zenfone Max Pro M1
+X00TD
+ X01BD
+Zenfone Max Pro M2
+X01BD
+BQ
+ 
+ bardock
+Aquaris X
+bardock
+ bardockpro
+Aquaris X Pro
+bardockpro
+Essential
+ 
+ mata
+PH-1
+mata
+F(x)tec
+ 
+ pro1
+Pro¹
+pro1
+Fairphone
+ 
+ FP2
+Fairphone 2
+FP2
+ FP3
+Fairphone 3
+FP3
+Google
+ 
+ shamu
+Nexus 6
+shamu
+ flox
+Nexus 7 2013 (Wi-Fi, Repartitioned)
+flox
+ sailfish
+Pixel
+sailfish
+ walleye
+Pixel 2
+walleye
+ taimen
+Pixel 2 XL
+taimen
+ blueline
+Pixel 3
+blueline
+ crosshatch
+Pixel 3 XL
+crosshatch
+ sargo
+Pixel 3a
+sargo
+ bonito
+Pixel 3a XL
+bonito
+ flame
+Pixel 4
+flame
+ coral
+Pixel 4 XL
+coral
+ sunfish
+Pixel 4a
+sunfish
+ bramble
+Pixel 4a 5G
+bramble
+ redfin
+Pixel 5
+redfin
+ barbet
+Pixel 5a
+barbet
+ marlin
+Pixel XL
+marlin
+LeEco
+ 
+ x2
+Le Max2
+x2
+ zl1
+Le Pro3 / Le Pro3 Elite
+zl1
+Lenovo
+ 
+ kuntao
+P2
+kuntao
+ YTX703L
+Yoga Tab 3 Plus LTE
+YTX703L
+ YTX703F
+Yoga Tab 3 Plus Wi-Fi
+YTX703F
+ heart
+Z5 Pro GT
+heart
+ zippo
+Z6 Pro
+zippo
+LG
+ 
+ d800
+G2 (AT&T)
+d800
+ d803
+G2 (Canadian)
+d803
+ d802
+G2 (International)
+d802
+ d801
+G2 (T-Mobile)
+d801
+ d850
+G3 (AT&T)
+d850
+ d852
+G3 (Canada)
+d852
+ d855
+G3 (International)
+d855
+ f400
+G3 (Korea)
+f400
+ ls990
+G3 (Sprint)
+ls990
+ d851
+G3 (T-Mobile)
+d851
+ vs985
+G3 (Verizon)
+vs985
+ h850
+G5 (International)
+h850
+ h830
+G5 (T-Mobile)
+h830
+ rs988
+G5 (US Unlocked)
+rs988
+ h910
+V20 (AT&T)
+h910
+ h990
+V20 (Global)
+h990
+ ls997
+V20 (Sprint)
+ls997
+ h918
+V20 (T-Mobile)
+h918
+ us996
+V20 (US Unlocked)
+us996
+ vs995
+V20 (Verizon)
+vs995
+Motorola
+ 
+ racer
+Edge
+racer
+ nio
+Edge S / Moto G100
+nio
+ rhannah
+Moto E5 Plus (XT1924-1/2/4/5)
+rhannah
+ ahannah
+Moto E5 Plus (XT1924-3/9)
+ahannah
+ hannah
+Moto E5 Plus (XT1924-6/7/8)
+hannah
+ kiev
+Moto G 5G / Motorola One 5G Ace
+kiev
+ nairo
+Moto G 5G Plus / Motorola One 5G
+nairo
+ cedric
+Moto G5
+cedric
+ montana
+Moto G5S
+montana
+ evert
+Moto G6 Plus
+evert
+ river
+Moto G7
+river
+ channel
+Moto G7 Play
+channel
+ lake
+Moto G7 Plus
+lake
+ ocean
+Moto G7 Power
+ocean
+ troika
+Moto One Action
+troika
+ chef
+Moto One Power
+chef
+ kane
+Moto One Vision/Motorola P50
+kane
+ victara
+Moto X 2014
+victara
+ payton
+Moto X4
+payton
+ addison
+Moto Z Play
+addison
+ nash
+Moto Z2 Force
+nash
+ albus
+Moto Z2 Play
+albus
+ beckham
+Moto Z3 Play
+beckham
+Nextbit
+ 
+ ether
+Robin
+ether
+Nokia
+ 
+ PL2
+Nokia 6.1 (2018)
+PL2
+ DRG
+Nokia 6.1 Plus
+DRG
+Nubia
+ 
+ TP1803
+Mini 5G
+TP1803
+Nvidia
+ 
+ porg
+Jetson (Nano / Nano 2GB) [Android TV]
+porg
+ porg_tab
+Jetson (Nano / Nano 2GB) [Tablet]
+porg_tab
+ foster
+Shield TV (2015 / 2015 Pro / 2017 / 2019 Pro) / Jetson TX1 [Android TV]
+foster
+ foster_tab
+Shield TV (2015 / 2015 Pro / 2017 / 2019 Pro) / Jetson TX1 [Tablet]
+foster_tab
+OnePlus
+ 
+ oneplus3
+OnePlus 3 / 3T
+oneplus3
+ cheeseburger
+OnePlus 5
+cheeseburger
+ dumpling
+OnePlus 5T
+dumpling
+ enchilada
+OnePlus 6
+enchilada
+ fajita
+OnePlus 6T
+fajita
+ guacamoleb
+OnePlus 7
+guacamoleb
+ guacamole
+OnePlus 7 Pro
+guacamole
+ hotdogb
+OnePlus 7T
+hotdogb
+ hotdog
+OnePlus 7T Pro
+hotdog
+ instantnoodle
+OnePlus 8
+instantnoodle
+ instantnoodlep
+OnePlus 8 Pro
+instantnoodlep
+ kebab
+OnePlus 8T
+kebab
+ lemonade
+OnePlus 9
+lemonade
+ lemonadep
+OnePlus 9 Pro
+lemonadep
+ bacon
+OnePlus One
+bacon
+Razer
+ 
+ cheryl
+Phone
+cheryl
+ aura
+Phone 2
+aura
+Samsung
+ 
+ a5y17lte
+Galaxy A5 (2017)
+a5y17lte
+ a7y17lte
+Galaxy A7 (2017)
+a7y17lte
+ m20lte
+Galaxy M20
+m20lte
+ hlte
+Galaxy Note 3 LTE (N9005/P)
+hlte
+ hltechn
+Galaxy Note 3 LTE (N9008V)
+hltechn
+ hltekor
+Galaxy Note 3 LTE (N900K/L/S)
+hltekor
+ hltetmo
+Galaxy Note 3 LTE (N900T/V/W8)
+hltetmo
+ d1
+Galaxy Note10
+d1
+ d2s
+Galaxy Note10+
+d2s
+ d2x
+Galaxy Note10+ 5G
+d2x
+ s3ve3gds
+Galaxy S III Neo (Dual SIM)
+s3ve3gds
+ s3ve3gjv
+Galaxy S III Neo (Samsung Camera)
+s3ve3gjv
+ s3ve3gxx
+Galaxy S III Neo (Sony Camera)
+s3ve3gxx
+ beyond1lte
+Galaxy S10
+beyond1lte
+ beyondx
+Galaxy S10 5G
+beyondx
+ beyond2lte
+Galaxy S10+
+beyond2lte
+ beyond0lte
+Galaxy S10e
+beyond0lte
+ jfltexx
+Galaxy S4 (GT-I9505, SGH-I337M, SGH-M919)
+jfltexx
+ jfltevzw
+Galaxy S4 (SCH-I545)
+jfltevzw
+ jfltespr
+Galaxy S4 (SCH-R970, SPH-L720)
+jfltespr
+ jflteatt
+Galaxy S4 (SGH-I337)
+jflteatt
+ jactivelte
+Galaxy S4 Active
+jactivelte
+ jfvelte
+Galaxy S4 Value Edition (GT-I9515/L)
+jfvelte
+ klteactivexx
+Galaxy S5 Active (G870F)
+klteactivexx
+ kltechn
+Galaxy S5 LTE (G9006V/8V)
+kltechn
+ klteaio
+Galaxy S5 LTE (G900AZ/S902L)
+klteaio
+ klte
+Galaxy S5 LTE (G900F/M/R4/R7/T/V/W8)
+klte
+ kltedv
+Galaxy S5 LTE (G900I/P)
+kltedv
+ kltekor
+Galaxy S5 LTE (G900K/L/S)
+kltekor
+ kltekdi
+Galaxy S5 LTE (SC-04F/SCL23)
+kltekdi
+ kltechnduo
+Galaxy S5 LTE Duos (G9006W/8W)
+kltechnduo
+ klteduos
+Galaxy S5 LTE Duos (G900FD/MD)
+klteduos
+ gts4lv
+Galaxy Tab S5e (LTE)
+gts4lv
+ gts4lvwifi
+Galaxy Tab S5e (Wi-Fi)
+gts4lvwifi
+ gta4xl
+Galaxy Tab S6 Lite (LTE)
+gta4xl
+ gta4xlwifi
+Galaxy Tab S6 Lite (Wi-Fi)
+gta4xlwifi
+SHIFT
+ 
+ axolotl
+SHIFT6mq
+axolotl
+Sony
+ 
+ kirin
+Xperia 10
+kirin
+ mermaid
+Xperia 10 Plus
+mermaid
+ pioneer
+Xperia XA2
+pioneer
+ voyager
+Xperia XA2 Plus
+voyager
+ discovery
+Xperia XA2 Ultra
+discovery
+ akari
+Xperia XZ2
+akari
+ xz2c
+Xperia XZ2 Compact
+xz2c
+ aurora
+Xperia XZ2 Premium
+aurora
+ akatsuki
+Xperia XZ3
+akatsuki
+ sirius
+Xperia Z2
+sirius
+ z3
+Xperia Z3
+z3
+ z3c
+Xperia Z3 Compact
+z3c
+Xiaomi
+ 
+ monet
+Mi 10 Lite 5G
+monet
+ apollon
+Mi 10T / Mi 10T Pro / Redmi K30S Ultra
+apollon
+ gauguin
+Mi 10T Lite / Mi 10i / Redmi Note 9 Pro 5G
+gauguin
+ gemini
+Mi 5
+gemini
+ natrium
+Mi 5s Plus
+natrium
+ sagit
+Mi 6
+sagit
+ wayne
+Mi 6X
+wayne
+ dipper
+Mi 8
+dipper
+ platina
+Mi 8 Lite
+platina
+ tissot
+Mi A1
+tissot
+ jasmine_sprout
+Mi A2
+jasmine_sprout
+ lithium
+Mi MIX
+lithium
+ chiron
+Mi MIX 2
+chiron
+ polaris
+Mi MIX 2S
+polaris
+ scorpio
+Mi Note 2
+scorpio
+ jason
+Mi Note 3
+jason
+ beryllium
+Poco F1
+beryllium
+ lmi
+POCO F2 Pro / Redmi K30 Pro / Redmi K30 Pro Zoom Edition
+lmi
+ alioth
+POCO F3 / Redmi K40 / Mi 11X
+alioth
+ miatoll
+POCO M2 Pro / Redmi Note 9S / Redmi Note 9 Pro / Redmi Note 9 Pro Max
+miatoll
+ surya
+POCO X3 NFC
+surya
+ vayu
+POCO X3 Pro
+vayu
+ onclite
+Redmi 7
+onclite
+ whyred
+Redmi Note 5 Pro
+whyred
+ twolip
+Redmi Note 6 Pro
+twolip
+ lavender
+Redmi Note 7
+lavender
+ ginkgo
+Redmi Note 8 / 8T
+ginkgo
+ZUK
+ 
+ z2_plus
+Z2 Plus
+z2_plus

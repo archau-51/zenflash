@@ -61,4 +61,3 @@ def main():
     else:
         app_path = os.path.join("./", "platform-tools")
         os.environ["PATH"] += os.pathsep + app_path
-        fr = False

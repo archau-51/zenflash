@@ -1,6 +1,7 @@
 from sys import platform
 from colorama import Fore
 import subprocess
+import requests
 
 if platform == "darwin":
     print(
@@ -76,3 +77,13 @@ with open('internal/codenames') as f:
     for line in content:
         if line == device + '\n':
             print(content[content.index(line) - 1])
+def url_ok(url):
+    try:
+        response = requests.head(url)
+        if response.status_code == 200:
+            return True
+        else:
+            return False
+    except requests.ConnectionError as e:
+        return e
+print(url_ok("https://dl.twrp.me/" +device+"/"))

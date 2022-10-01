@@ -2,11 +2,39 @@ from sys import platform
 from colorama import Fore
 import subprocess
 import requests
+from bs4 import BeautifulSoup
 
+print(
+    Fore.RED
+    + """ _  _  _____                _    _                _  _ 
+| || |/  __ \              | |  (_)              | || |
+| || || /  \/  __ _  _   _ | |_  _   ___   _ __  | || |
+| || || |     / _` || | | || __|| | / _ \ | '_ \ | || |
+|_||_|| \__/\| (_| || |_| || |_ | || (_) || | | ||_||_|
+(_)(_) \____/ \__,_| \__,_| \__||_| \___/ |_| |_|(_)(_)
+                                                       
+                                                       
+
+"""
+    + Fore.RESET
+)
+print(
+    Fore.YELLOW
+    + "I am not responsible for whatever happens to your device, no matter if it is good or bad"
+)
+print(
+    "By proceeding, you agree that any damage to your device is your and solely your responsibilty"
+    + Fore.RESET
+)
+if input(Fore.RED + 'To proceed, type "I AGREE": ' + Fore.YELLOW) != "I AGREE":
+    print(Fore.CYAN + "Okay, exiting" + Fore.RESET)
+    raise SystemExit
+print(Fore.RESET)
+# check platform
 if platform == "darwin":
     print(
         Fore.RED
-        + "Sorry, this script is not compatible with macOS, please try Windows or Linux instead."
+        + "Sorry, this script has not been tested on OSX, please try Windows or Linux instead."
         + Fore.RESET
     )
     raise SystemExit(1)
@@ -72,11 +100,13 @@ for char in device1:
         break
 device = "".join(device)
 print(device)
-with open('internal/codenames') as f:
+with open("internal/codenames") as f:
     content = f.readlines()
     for line in content:
-        if line == device + '\n':
+        if line == device + "\n":
             print(content[content.index(line) - 1])
+
+
 def url_ok(url):
     try:
         response = requests.head(url)
@@ -86,4 +116,15 @@ def url_ok(url):
             return False
     except requests.ConnectionError as e:
         return e
-print(url_ok("https://dl.twrp.me/" +device+"/"))
+
+
+twrp = url_ok("https://dl.twrp.me/" + device + "/")
+page = requests.get("https://orangefox.download/device/" + device + "/")
+soup = BeautifulSoup(page.content, "html.parser")
+results = soup.find(class_="nf-img")
+# wrote this like 3 months ago or something, no idea how it works
+try:
+    if results.prettify:
+        of = False
+except:
+    of = True

@@ -43,7 +43,7 @@ elif platform == "win32":
 
     pass
 elif platform == "linux" or platform == "linux2":
-    pass
+    from internal.linux import main
 main()
 if (
     subprocess.run(["adb", "devices", "-l"], capture_output=True)

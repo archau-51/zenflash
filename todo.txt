@@ -1,0 +1,16 @@
+zenflash workflow:
+
+1. Agreement stuff - done
+2. Stage menu
+	2.1 adb unlock
+	2.2 Flash recovery
+	2.3 Flash rom
+	2.4 Flash magisk
+	2.5 device information (low priority)
+
+Things to do:
+
+1. stages through arguments
+2. Zenflash module
+3. updater
+4. Ascii art

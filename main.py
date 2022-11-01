@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 try:
     f = open("./internal/ag_conf", 'r')
     if f.read() != "This file expresses agreement to the terms of this software throughout all excecutions":
-        raise SystemError()()
+        raise SystemError()
     f.close()
 except:
     print(
@@ -58,66 +58,68 @@ else:
     print(Fore.CYAN + "I have no clue what OS you are running, but it is definetly not supported \n add an issue on github if you think that support should be added or if there is a problem."+ Fore.RESET)
     raise SystemError()
 main()
-if (
-    subprocess.run(["adb", "devices", "-l"], capture_output=True)
-    .stdout.splitlines()[1]
-    .decode("utf-8")
-    == ""
-):
-    print(Fore.YELLOW + "Connect your device" + Fore.RESET)
-    while True:
-        if (
-            subprocess.run(["adb", "devices", "-l"], capture_output=True)
-            .stdout.splitlines()[1]
-            .decode("utf-8")
-            == ""
-        ):
-            continue
-        else:
-            break
-print(Fore.GREEN + "Device found!" + Fore.RESET)
-if (
-    subprocess.run(["adb", "devices", "-l"], capture_output=True)
-    .stdout.splitlines()[1]
-    .decode("utf-8")
-    .split()[1]
-    == "unauthorized"
-):
-    print(
-        Fore.YELLOW
-        + "Looks Like you have not authorized usb debugging from this computer on the device yet. \nIf a prompt appeared on yor device, tap allow. \nIf not, check the specific instructions for your device."
-        + Fore.RESET
+def connAdb():
+    if (
+        subprocess.run(["adb", "devices", "-l"], capture_output=True)
+        .stdout.splitlines()[1]
+        .decode("utf-8")
+        == ""
+    ):
+        print(Fore.YELLOW + "Connect your device" + Fore.RESET)
+        while True:
+            if (
+                subprocess.run(["adb", "devices", "-l"], capture_output=True)
+                .stdout.splitlines()[1]
+                .decode("utf-8")
+                == ""
+            ):
+                continue
+            else:
+                break
+    print(Fore.GREEN + "Device found!" + Fore.RESET)
+    if (
+        subprocess.run(["adb", "devices", "-l"], capture_output=True)
+        .stdout.splitlines()[1]
+        .decode("utf-8")
+        .split()[1]
+        == "unauthorized"
+    ):
+        print(
+            Fore.YELLOW
+            + "Looks Like you have not authorized usb debugging from this computer on the device yet. \nIf a prompt appeared on yor device, tap allow. \nIf not, check the specific instructions for your device."
+            + Fore.RESET
+        )
+        while True:
+            if (
+                subprocess.run(["adb", "devices", "-l"], capture_output=True)
+                .stdout.splitlines()[1]
+                .decode("utf-8")
+                .split()[1]
+                == "unauthorized"
+            ):
+                continue
+            else:
+                break
+    print(Fore.GREEN + "This computer is authorized!" + Fore.RESET)
+    device1 = list(
+        subprocess.run(["adb", "devices", "-l"], capture_output=True)
+        .stdout.splitlines()[1]
+        .decode("utf-8")
+        .split()[4]
     )
-    while True:
-        if (
-            subprocess.run(["adb", "devices", "-l"], capture_output=True)
-            .stdout.splitlines()[1]
-            .decode("utf-8")
-            .split()[1]
-            == "unauthorized"
-        ):
-            continue
-        else:
+    device = device1.copy()
+    for char in device1:
+        device.pop(0)
+        if char == ":":
             break
-print(Fore.GREEN + "This computer is authorized!" + Fore.RESET)
-device1 = list(
-    subprocess.run(["adb", "devices", "-l"], capture_output=True)
-    .stdout.splitlines()[1]
-    .decode("utf-8")
-    .split()[4]
-)
-device = device1.copy()
-for char in device1:
-    device.pop(0)
-    if char == ":":
-        break
-device = "".join(device)
-print(device)
-with open("internal/codenames") as f:
-    content = f.readlines()
-    for line in content:
-        if line == device + "\n":
-            print(content[content.index(line) - 1])
+    device = "".join(device)
+    return device
+def getName(dev):
+    with open("internal/codenames") as f:
+        content = f.readlines()
+        for line in content:
+            if line == dev + "\n":
+                return content[content.index(line) - 1]
 
 
 def url_ok(url):
@@ -130,18 +132,21 @@ def url_ok(url):
     except requests.ConnectionError as e:
         return e
 
-
-twrp = url_ok("https://dl.twrp.me/" + device + "/")
-if twrp != True and twrp != False:
-    print(Fore.YELLOW + "Looks like you are not connected to the internet, Skipping recovery availability check" + Fore.RESET)
-else:
-    page = requests.get("https://orangefox.download/device/" + device + "/")
-    soup = BeautifulSoup(page.content, "html.parser")
-    results = soup.find(class_="nf-img")
-    # wrote this like 3 months ago or something, no idea how it works
-    try:
-        if results.prettify:
-            of = False
-    except:
-        of = True
+def recoveryStage(dev):
+    twrp = url_ok("https://dl.twrp.me/" + dev + "/")
+    skip = False
+    if twrp != True and twrp != False:
+        print(Fore.YELLOW + "Looks like you are not connected to the internet, Skipping recovery availability check" + Fore.RESET)
+        skip = True
+    else:
+        page = requests.get("https://orangefox.download/device/" + dev + "/")
+        soup = BeautifulSoup(page.content, "html.parser")
+        results = soup.find(class_="nf-img")
+        # wrote this like 3 months ago or something, no idea how it works
+        try:
+            if results.prettify:
+                of = False
+        except:
+            of = True
+    
     

@@ -3,6 +3,8 @@ from colorama import Fore
 import subprocess
 import requests
 from bs4 import BeautifulSoup
+from selenium import webdriver
+
 try:
     f = open("./internal/ag_conf", 'r')
     if f.read() != "This file expresses agreement to the terms of this software throughout all excecutions":
@@ -148,5 +150,43 @@ def recoveryStage(dev):
                 of = False
         except:
             of = True
+if (
+        subprocess.run(["adb", "devices", "-l"], capture_output=True)
+        .stdout.splitlines()[1]
+        .decode("utf-8")
+        == ""
+    ):
+    print(Fore.RED + "No Device Connected \n" + Fore.RESET)
+elif (
+        subprocess.run(["adb", "devices", "-l"], capture_output=True)
+        .stdout.splitlines()[1]
+        .decode("utf-8")
+        .split()[1]
+        == "unauthorized"
+    ):
+    print(FORE.YELLOW +"Device unauthorized \n"+ FORE.RESET)
+else: 
+    device1 = list(
+        subprocess.run(["adb", "devices", "-l"], capture_output=True)
+        .stdout.splitlines()[1]
+        .decode("utf-8")
+        .split()[4]
+    )
+    device = device1.copy()
+    for char in device1:
+        device.pop(0)
+        if char == ":":
+            break
+    print("\"{}\" connected.\n".format("".join(device)))
+print(Fore.CYAN + """
+0. Connect device (Optional, Done automatically on all steps)
+""" + Fore.RED +
+"""1. OEM unlock (not recommended)"""+Fore.GREEN+"""
+2. find/flash recovery
+3. find/flash ROM
+4. flash Magisk
+99. exit
+""" + Fore.RESET
+)
     
     
